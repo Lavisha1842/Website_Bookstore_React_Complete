@@ -1,0 +1,60 @@
+#book-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    gap: 1em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.book-box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-background-color);
+    padding: 1em;
+    gap: 0.25em;
+    text-align: center;
+    flex-basis: 25%;
+    align-items: center;
+
+}
+
+.book-title {
+    font-weight: bold;
+    color: var(--secondary-background-color);
+}
+
+.book-author {
+    font-style: italic;
+    color: var(--secondary-background-color);
+}
+
+.book-price {
+    color: var(--secondary-background-color);
+}
+
+.book-preview{
+    position: absolute;
+    align-self: flex-end;
+}
+
+.button-add-to-cart {
+    background: #FFFFFF;
+    color: var(--secondary-background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border: 1px solid #710808;
+    font-weight: bold;
+}
+
+.button-add-to-cart:hover{
+    background-color: #CCCCCC;
+}
+
+.category-book-list{
+    margin: 1% 0 0 1%;
+}

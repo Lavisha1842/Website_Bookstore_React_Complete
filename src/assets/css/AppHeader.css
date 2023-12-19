@@ -1,0 +1,112 @@
+
+header {
+    background-color: var(--secondary-background-color);
+
+    display: flex;
+    padding: 0.5em;
+    /*gap: 0.25em;*/
+    min-height: 70px;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Distribute items evenly horizontally */
+    top: 50%;
+    /*transform: translate(0, 50%);*/
+}
+
+.logo-and-title{
+    display: flex;
+}
+
+.logo-and-title a{
+    text-decoration: none;
+}
+.text-logo {
+    font-family: var(--title-font-family);
+    font-size: 1.5em;
+    top: 50%;
+    left: 15%;
+    transform: translate(0, 50%);
+    align-self: center;
+    color: var(--default-text-color);
+}
+
+/*.text-logo h1{*/
+/*    text-decoration: none;*/
+/*}*/
+
+
+.search-bar {
+    background-color: var(--neutral-color);
+    height: 20 px;
+    color: #710808;
+    border: none;
+    align-items: center;
+}
+
+.search-box{
+    width: 350 px;
+    height: 30 px;
+    background-color: var(--neutral-color);
+    display: flex;
+    align-items: center;
+    padding: 0.25em;
+}
+.button-login{
+    background-color: var(--default-text-color);
+    color: var(--secondary-background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+.button-login:hover{
+    background-color: #CCCCCC;
+}
+
+.fa-stack[data-count]:after{
+    position:absolute;
+    right:0%;
+    top:0%;
+    content: attr(data-count);
+    font-size:40%;
+    padding:.5em;
+    border-radius:999px;
+    line-height:.5em;
+    color: var(--default-text-color);
+    color:var(--secondary-background-color);
+    text-align:center;
+    min-width:0.5em;
+    font-weight:bold;
+    background: white;
+    border-style:solid;
+}
+.fa-circle {
+    color:var(--secondary-background-color);
+}
+
+.fa-search{
+    color: var(--secondary-background-color);
+}
+
+.fa-bars{
+    color: var(--default-text-color);
+    cursor: pointer;
+
+}
+
+.fa-times{
+    color: var(--default-text-color);
+    cursor: pointer;
+
+}
+
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+}

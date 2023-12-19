@@ -1,0 +1,10 @@
+.photo-container-img {
+    display: inline-block;
+    margin: 10px; /* Add spacing between photos */
+    max-width: 100%; /* Ensure photos don't exceed their container width */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 2;
+}
+
+
+

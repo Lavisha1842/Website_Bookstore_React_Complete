@@ -1,0 +1,212 @@
+
+.cart-table {
+    display: grid;
+    grid-template-columns: max-content minmax(10em, 20em) repeat(3, max-content);
+    row-gap: 1em;
+    width: fit-content;
+    margin: 20px;
+    background-color: white;
+    color: black;
+}
+
+.cart2{
+    display: contents;
+}
+
+.cart2 li {
+    display: contents;
+}
+
+
+.table-heading {
+    background-color: #333;
+    color: white;
+}
+
+
+.table-heading > * {
+    background-color: #333;
+    padding: 0.5em;
+}
+
+.heading-book {
+    grid-column: 1 / 3;
+}
+
+.heading-price {
+    grid-column: 3 / 5;
+    text-align: right;
+}
+
+.heading-subtotal {
+    text-align: right;
+    grid-column: -2 / -1;
+}
+
+.cart-book-image {
+    padding: 0 1em;
+}
+
+.cart-book-image > * {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.cart2 img {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+.rect {
+    background-color: var(--primary-color-dark);
+}
+
+.narrow-rect {
+    width: 75px;
+    height: 100px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+.wide-rect {
+    width: 125px;
+    height: 100px;
+}
+
+.cart-book-price {
+    padding-left: 1em;
+    text-align: right;
+}
+
+.cart-book-quantity {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.cart-book-subtotal {
+    text-align: right;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+.subtotal-section {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.subtotal-label {
+    font-weight: bold;
+    margin-right: 20px;
+    color: var(--secondary-background-color);
+}
+
+.subtotal-value {
+    font-weight: bold;
+    color: var(--secondary-background-color);
+}
+
+/* Increment/decrement buttons */
+
+.icon-button {
+    border: none;
+    cursor: pointer;
+}
+
+.inc-button {
+    font-size: 1.125rem;
+    color: var(--primary-color);
+    margin-right: 0.25em;
+    background-color: white;
+}
+
+.inc-button:hover {
+    color: var(--secondary-background-color);
+}
+
+.dec-button {
+    font-size: 1.125rem;
+    color: #ccc;
+    background-color: white;
+}
+
+.dec-button:hover {
+    color: #aaa;
+}
+
+
+.row-line {
+    border-bottom: 1px solid black;
+}
+
+.button-continue-shopping{
+    background-color: var(--default-text-color);
+    color: var(--secondary-background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+    border: 1px solid #710808;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.button-continue-shopping:hover{
+    background-color: #CCCCCC;
+}
+
+.button-checkout{
+    background: var(--secondary-background-color);
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+    border: 1px solid white;
+    font-weight: bold;
+    position: absolute;
+    /* align-self: flex-end; */
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+.button-checkout:hover {
+    background-color: #9e1010; /* Change background color on hover to #FF5733 or your desired color */
+}
+
+.clear-cart-button{
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    /*padding: 0.25em 0.5em;*/
+    padding: 0.15em 0.3em;
+    font-size: 14px;
+    color: var(--secondary-background-color);
+    margin: 5px;
+    position: relative;
+}
+
+.clear-cart-button:hover{
+    background-color: #CCCCCC;
+}
+
+.empty-cart{
+    color: var(--secondary-background-color);
+    font-weight: bold;
+}
+
+.buttons-cartpage{
+    display: contents;
+
+
+}

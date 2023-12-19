@@ -1,0 +1,35 @@
+.category-nav{
+    background-color: var(--neutral-color);
+    display: flex;
+    padding: 0.15em;
+    position: relative;
+}
+
+
+.category-buttons {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: var(--neutral-color);
+
+}
+
+
+.button.unselected-category-button,
+.button.unselected-category-button:visited {
+    background-color: var(--neutral-color);
+    color:  var( --secondary-background-color);
+}
+
+.button.unselected-category-button:hover,
+.button.unselected-category-button:active {
+
+}
+
+.button.selected-category-button,
+.button.selected-category-button:visited {
+    background-color: var(--neutral-color);
+    color: var(--neutral-color);
+    font-weight: bold;
+    text-decoration: underline !important;
+}

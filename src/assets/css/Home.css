@@ -1,0 +1,138 @@
+
+/*.home-pages  {*/
+/*!*    display: flex;*!*/
+/*justify-content: center;*/
+/*}*/
+
+/*.welcome-text {*/
+/*    width: 30em;*/
+/*    background-color: var(--neutral-color);*/
+/*    color: whitesmoke;*/
+/*    padding: 1rem;*/
+/*    margin-top: 1rem;*/
+/*}*/
+/*.flow-content > * + * {*/
+/*    margin-top: 1rem;*/
+/*}*/
+
+/*!**/
+/*  Giving various sections of your page this utility class*/
+/*  will ensure a nice padding around the contents.*/
+/**!*/
+/*.container {*/
+/*    padding: 2rem;*/
+/*}*/
+
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+
+}
+
+.welcome-text {
+    width: 20em;
+}
+
+.category-image-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.category-image-items a {
+    text-align: center;
+    cursor: pointer;
+}
+
+.category-image-items div {
+    padding: 0.5em 0;
+    background: rgba(0, 0, 0, 0.5); /* last # is percent opacity */
+    color: white;
+    transform: translateY(-2.25em);
+    margin-bottom: -2em;
+
+}
+
+.background-image img {
+    /* background-image: url("/bookstore-html/images/site/hero.jpg");  */
+    /* Replace with your image file path */
+    background-size: cover; /* Adjust to control how the image covers the container */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-position: center center; /* Center the image horizontally and vertically */
+    z-index: 1;
+}
+
+.photo-container {
+    text-align: center; /* Center-align the photos within the container */
+    width:fit-content;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+
+    /*top: 42%;*/
+    /*left: 12.5%;*/
+    /*flex-direction: column;*/
+    /*transform: translate(0, 50%);*/
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*.photo-container img {*/
+/*    !*display: inline-block;*!*/
+/*    margin: 10px; !* Add spacing between photos *!*/
+/*    max-width: 100%; !* Ensure photos don't exceed their container width *!*/
+/*    height: auto; !* Maintain the aspect ratio *!*/
+/*    z-index: 2;*/
+/*}*/
+
+.button-shopnow{
+    background: var(--secondary-background-color);
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border: 1px solid white;
+    font-weight: bold;
+    position: absolute;
+    /* align-self: flex-end; */
+    font-size: 20px;
+}
+
+.button-shopnow:hover {
+    background-color: #9e1010; /* Change background color on hover to #FF5733 or your desired color */
+}
+
+
+
+.fa-angle-left,
+.fa-angle-right{
+    cursor: pointer;
+    position: relative;
+}
+
+/*!* Media query for screens with a maximum width of 768px (adjust as needed) *!*/
+/*@media (max-width: 768px) {*/
+/*    .photo-container {*/
+/*        top: 40%; !* Adjust the vertical position for smaller screens *!*/
+/*        !* Other styles for smaller screens *!*/
+/*    }*/
+/*}*/
+
+/*!* Media query for screens with a maximum width of 480px (adjust as needed) *!*/
+/*@media (max-width: 480px) {*/
+/*    .photo-container {*/
+/*        top: 30%; !* Adjust the vertical position for even smaller screens *!*/
+/*        !* Other styles for even smaller screens *!*/
+/*    }*/
+/*}*/
